@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+address,
+img,
+center,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+
+
+/* --------------------------------------- */
+/* --------------- GENERAL --------------- */
+/* --------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Pane Sizes */
+    --left-pane-width: 40vw;
+    --right-pane-width: calc(100vw - var(--left-pane-width));
+    /* Theme Colors   */
+
+    --background-color: #d72f2f;
+    /*bg color rgb(53, 48, 48)*/
+
+    --background-color2: #EAEAEA;
+    /* --background-color2: ; */
+
+    --background-color-transparent: rgba(53, 48, 48, 0.646);
+
+    --shadow-color: rgb(34, 31, 31);
+    --text-color: #AEDFF7;
+    --text-color2: #C7FFD8;
+    --text-color3: #F92727;
+    --text-color4: #30D5C8
+        /* Font */
+        font-family: 'Syne', sans-serif;
+    --main-font: 'Syne', sans-serif;
+    /* Padding */
+    --inner-padding: 30px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.pane-div {
+    height: 100vh;
+}
+
+/* ------------- LEFT PANE --------------- */
+
+#left-pane-div {
+    width: var(--left-pane-width);
+    background: no-repeat url("img/voc-logo.png");
+    background-position: center center;
+    background-color: #FFFFFF;
+}
+
+#banner-div {
+    color: red;
+    background-color: var(--background-color-transparent);
+    height: 15%;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+#banner-div>h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/* ------------- LEFT PANE --------------- */
+
+
+
+/* ------------- RIGHT PANE -------------- */
+
+#right-pane-div {
+    font-family: var(--main-font);
+    width: var(--right-pane-width);
+    background-color: var(--background-color);
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5% 0%;
+    text-align: center;
+}
+
+#right-pane-div>h2 {
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 var(--inner-padding);
+}
+
+/* ---------------- FORM ----------------- */
+
+#form {
+    width: 100%;
+    color: #e91818;
+    text-align: left;
+}
+
+#form-inner-div {
+    background-color: var(--background-color2);
+    width: 100%;
+    display: flex;
+    padding: 10px var(--inner-padding);
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#form-inner-div h2 {
+    font-size: 2rem;
+}
+
+#form-inner-parameters-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form11 {
+    color: white;
+}
+
+.form-parameter {
+    display: flex;
+    flex-direction: column;
+    color: #070706;
+    width: 45%;
+    margin: 10px 0px;
+}
+
+.form-parameter>input {
+    margin: 5px 0;
+    width: 70%;
+    background-color: var(--background-color);
+    height: 30px;
+    color: rgb(255, 255, 255);
+    border-color: var(--background-color);
+}
+
+.form-parameter>input:focus,
+.form-parameter>input:active {
+    border-color: var(--text-color3);
+}
+
+input::placeholder {
+    color: orange
+}
+
+#submit-btn {
+    border-color: transparent;
+    margin: 20px var(--inner-padding);
+    border-radius: 28px;
+    width: 150px;
+    height: 15%;
+    font-size: 1rem;
+    background-color: #0088ff;
+    color: rgb(255, 254, 254);
+    font-family: var(--main-font);
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: top 0.1s ease, left 0.1s ease;
+}
+
+#submit-btn:hover {
+    background-color: #ffffff;
+    box-shadow: 15px 15px 8px var(--shadow-color);
+    position: relative;
+    top: -2px;
+    left: -2px;
+    color: red;
+
+}
+
+#form>h3 {
+    margin: 20px var(--inner-padding);
+}
+
+
+
+h3 a span {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+h3 a span:hover {
+    color: yellow;
+    text-decoration: underline;
+
+}
+
+
+
+/* --------------------------------------- */
+/* --------------- EFFECTS --------------- */
+/* --------------------------------------- */
+
+.text-gradient-effect {
+    /* background: linear-gradient(to right, #FFFF00, #ffffff); */
+    background-color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.shadow-effect {
+    box-shadow: 5px 5px 15px var(--shadow-color);
+}

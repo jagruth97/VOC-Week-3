@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Mohave&display=swap');
+
+.page-title {
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;
+}
+
+body {
+    background-image: url(img/moon-in-space-4k_1629256169.jpg);
+    background-size: cover;
+    font-family: 'Mohave', sans-serif;
+}
+
+.control-label {
+    color: white;
+}
+
+.jumbotron {
+    opacity: 0.8;
+    background-color: unset;
+    color: aliceblue;
+}
+
+.level-1 {
+    width: 0%;
+}
+
+.level0 {
+    width: 30%;
+}
+
+.level1 {
+    width: 40%;
+    background-color: indianred;
+}
+
+.level2 {
+    width: 60%;
+    background-color: goldenrod !important;
+}
+
+.level3 {
+    width: 70%;
+    background-color: lightblue;
+}
+
+.level4 {
+    width: 80%;
+    background-color: lightgreen;
+}
+
+.level5 {
+    width: 100%;
+}
