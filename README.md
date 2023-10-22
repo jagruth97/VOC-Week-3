@@ -11,6 +11,6 @@ Form Filling
 ![voc-w3t2a](https://github.com/jagruth97/VOC-Week-3/assets/65918156/b3d9105c-bd94-43aa-84ab-74cfc43d3111)
 ![voc-w3t2b](https://github.com/jagruth97/VOC-Week-3/assets/65918156/3bcd88eb-0354-4ae8-8afa-67bf936f8caf)
 
-!Due to some issues in Netlify, cannot provide the preview page!
+!Due to some issues in Netlify, unable to provide the preview page!
 
 
